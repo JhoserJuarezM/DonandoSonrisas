@@ -1,0 +1,334 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** Reset para REMS - 62.5% = 10px de 16px **/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-size: 1.6rem;
+    line-height: 2rem;
+}
+/*--------------- GLOBALES------------------*/
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.contenedor{
+    max-width: 120rem;
+    margin:0 auto;
+}
+.contenedor-nosotros{
+    max-width: 90rem;
+    margin:0 auto;
+}
+.contenedor-contenido{
+    max-width: 115rem;
+    margin:0 auto;
+}
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 3.4rem;
+}
+h3{
+    font-size: 3rem;
+}
+h4{
+    font-size: 2.6rem;
+}
+
+/* utilidades*/
+.seccion{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.fw-300{
+ font-weight: 300;
+}
+.centrar-texto{
+    text-align: center;
+}
+/* BOTONES+*/
+.boton {
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 1rem 3rem;
+    margin: 4rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+    display: block;
+    flex: 0 0 100%;
+}
+
+.boton:hover {
+    cursor: pointer;
+}
+.boton-azul {
+    background-color:#1cb6c6;
+}
+.boton-rojo {
+    background-color:#e33e41;
+}
+
+
+/*--------------- header------------------*/
+
+ .site-header.inicio {
+    background-color: #fff;
+    background-position: center center;
+    background-size: cover;
+    height: 10vh;
+    min-height: 10rem;
+    max-width: 120rem;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+.site-section.inicio {
+    background-image: url(../img/principal.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+    min-height: 52.5rem;
+    border: 1px solid #b5b5b5;
+}
+/* parte de arriba de la pagina ...*/
+.navegacion a{
+    color: #808080;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 2.5rem;
+    font-family: 'Luckiest Guy', cursive;
+}
+.navegacion a:hover{
+    color: #e0aeaf;
+}
+.navegacion a:last-of-type{
+    margin:0x;
+}
+.redes_sociales a{
+    color: #808080;
+    text-decoration: none;
+    font-size: 2rem;
+    margin-right: 2.5rem;
+}
+.redes_sociales a:hover{
+    color: blue;
+}
+.redes_sociales a:last-of-type{
+    margin:0;
+}
+/* ICONOS INFORMACION*/
+.iconos-informacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem;   
+}
+.iconos-informacion-nosotros{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;   
+    max-width: 90rem;
+}
+.iconos-equipo-nosotros{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;   
+    max-width: 90rem;
+    height: 35vh;
+    min-height: 22.5rem;
+    
+
+}
+.iconos-informacion h3{
+    font-family: 'Luckiest Guy', cursive;
+ 
+
+}
+.iconos{
+    flex-basis: calc(33.3% - 5rem); /* para poder centrar las 3 imagenes de INFORMACION*/
+    text-align: center;
+    
+    height: 30vh;
+    min-height: 27rem;
+    margin: 1rem;
+}
+
+.iconos-s{
+    flex-basis: calc(33.3% - 8rem); /* para poder centrar las 3 imagenes de INFORMACION*/
+    text-align: center;
+    
+    height: 30vh;
+    min-height: 27rem;
+
+
+
+}
+.iconos-talleres{
+    flex-basis: calc(33.3% - 8rem); /* para poder centrar las 3 imagenes de INFORMACION*/
+    text-align: center;
+    
+    height: 30vh;
+    min-height: 27rem;
+    margin: 2px;
+
+
+}
+.informacion-nosotros{
+    flex-basis: calc(50% - 5rem); /* para poder centrar las 3 imagenes de INFORMACION*/
+    text-align: center;
+    
+    height: 30vh;
+    min-height: 27rem;
+    margin: 2px;
+
+
+}
+.iconos-h{
+    flex-basis: calc(33.3% - 8rem); /* para poder centrar las 3 imagenes de INFORMACION*/
+    text-align: center;
+    
+    height: 30vh;
+    min-height: 27rem;
+
+
+}
+/* .iconos-h p{
+    color: #fff;
+}
+.iconos-s p{
+    color: #fff
+} */
+.iconos-h h3{
+    color: #808080;
+}
+.iconos-s h3{
+    color: #808080;
+ 
+}
+
+
+
+
+.iconos-social{
+    flex-basis: calc(33.3% - 8rem); /* para poder centrar las 3 imagenes de INFORMACION*/
+    text-align: center;
+    background-image: url(../img/social.png);
+    height: 30vh;
+    min-height: 27rem;
+
+}
+.iconos-hospital{
+    flex-basis: calc(33.3% - 8rem); /* para poder centrar las 3 imagenes de INFORMACION*/
+    text-align: center;
+    background-image: url(../img/hospital.png);
+    height: 30vh;
+    min-height: 27rem;
+
+}
+.fondo-seccion{
+    background-color: #808080;
+  
+
+  
+}
+.auspicio {
+   
+    background-position: center center;
+    background-size: cover;
+    height: 50vh;
+    min-height: 20.5rem;
+    border: 1px solid #e6e6e6;
+    background-color: #e6e6e6;
+}
+.equipo {
+   
+    background-position: center center;
+    background-size: cover;
+    height: 125vh;
+    min-height: 20.5rem;
+    border: 1px solid #e6e6e6;
+    background-color: #e6e6e6;
+}
+.equipo h2{
+   
+   color: #D2D2D2;
+}
+
+/* footer*/
+.footer {
+   
+    background-position: center center;
+    background-size: cover;
+    height:  9.5vh;
+    min-height: 4rem;
+    border: 1px solid #1cb6c6;
+    background-color: #1cb6c6;
+}
+.footer_flex{
+   
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+}
+.iconos-caracteristicas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+    max-width: 500px;
+}
+.footer_flex p{
+    font-family: 'Lucida Sans';
+
+}
+/* cabecera de NOSOTROS color rojo*/
+
+.cabecera-nosotros {
+    background-position: center center;
+    background-size: cover;
+    height: 28.4vh;
+    min-height: 15rem;
+    border: 1px solid #e33e41;
+    background-color:#e33e41;
+}
+
+.nosotros-texto{
+   align-items: center;
+   
+}
+.nosotros-texto h2{
+    text-align: center;
+}
+.iconos h2{
+    font-size: 5.9rem;
+    color: #ffffff;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+.nosotros-texto h2{
+    font-size: 1.7rem;
+    color: #e33e41;
+font-family: 'Nunito', sans-serif;
+}
+.nosotros-texto h3{
+    font-size: 1.7rem;
+    color: #808080;
+    font-family: 'Nunito', sans-serif;
+}
+
+
+
